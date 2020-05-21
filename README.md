@@ -1,2 +1,2 @@
-# omnistack-mobile
-Projeto em React Native da semana omnistack
+# Senai-mobile
+Autor: Paulo Renan Almeida
