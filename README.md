@@ -1,2 +1,2 @@
-# Senai-mobile
-Autor: Paulo Renan Almeida
+# omnistack-mobile
+Projeto em React Native da semana omnistack

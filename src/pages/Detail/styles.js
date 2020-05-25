@@ -6,18 +6,26 @@ export default StyleSheet.create({
         flex:1,
         paddingHorizontal: 24,
         paddingTop: Constants.statusBarHeight +20,
+        backgroundColor: '#233958'
     },
+
+    logo: {
+        marginTop: -125,
+        marginLeft: 15
+    },
+
     header:{
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
+        marginTop: 35
     },
     incident:{
         padding: 24,
         borderRadius: 8,
         backgroundColor: '#fff',
         marginBottom:16,
-        marginTop: 48,
+        marginTop: 0,
     },
     incidentProperty:{
         fontSize: 14,
@@ -53,7 +61,7 @@ export default StyleSheet.create({
         justifyContent: "space-between",
     },
     action:{
-        backgroundColor:'#e02041',
+        backgroundColor:'#1e90ff',
         borderRadius: 8,
         height: 50,
         width: '48%',

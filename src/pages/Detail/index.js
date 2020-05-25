@@ -4,7 +4,8 @@ import {View, Text, Image, TouchableOpacity, Linking} from 'react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import * as MailComposer from 'expo-mail-composer';
 import styles from './styles';
-import logoImg from '../../assets/logo.png';
+// import logoImg from '../../assets/logo.png';
+import Logo from '../../assets/logo';
 
 export default function Detail(){
     const navigation = useNavigation();
@@ -28,10 +29,13 @@ export default function Detail(){
     return(
         <View style={styles.container}>
             <View style={styles.header}>
-                <Image source={logoImg} />
+                {/* <Image source={logoImg} /> */}
                 <TouchableOpacity onPress={navigationBack}>
-                    <Feather name="arrow-left" size={28} color="#E82041" />
+                    <Feather name="arrow-left" size={28} color="#1e90ff" />
                 </TouchableOpacity>
+            </View>
+            <View style={styles.logo}>
+                <Logo width={270} height={200} />
             </View>
             <View style={styles.incident}>
                 <Text style={[styles.incidentProperty, {marginTop:0}]}>ONG:</Text>
