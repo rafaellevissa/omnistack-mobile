@@ -1,2 +1,2 @@
 # omnistack-mobile
-Projeto em React Native da semana omnistack
+Autor: Paulo Renan Tavares Almeida de Souza
