@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {Feather} from '@expo/vector-icons';
 import {View, FlatList, Image, Text, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native'
-import logoImg from '../../assets/logo.png';
+// import logoImg from '../../assets/logo.png';
+import Logo from '../../assets/logo';
 import styles from './styles';
 import api from '../../services/api';
 
@@ -39,10 +40,11 @@ export default function Incidents(){
     return(
         <View style={styles.container}>
             <View style={styles.header}>
-                <Image source={logoImg} />
-                <Text style={styles.headerText}>
+                {/* <Image source={logoImg} /> */}
+                <Logo width={270} height={200} />
+                {/* <Text style={styles.headerText}>
                     Total de <Text style={styles.headerTextBold}>{total} casos</Text>   
-                </Text>
+                </Text> */}
             </View>
             <Text style={styles.title}>Bem-vindo</Text>
             <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia.</Text>
@@ -76,7 +78,7 @@ export default function Incidents(){
                             onPress={() => navigateToDetail(incident)}
                         >
                             <Text style={styles.detailsButtonText}>Ver mais detalhes</Text>
-                            <Feather name="arrow-right" size={16} color="#E02041" />
+                            <Feather name="arrow-right" size={16} color="#1e90ff" />
                         </TouchableOpacity>
                     </View>                    
                 )}
